@@ -1,0 +1,51 @@
+Agenda:
+1. Introduction to full stack web application development
+
+Front end -html,css,java script,ajax
+java full stack developer
+Back end - Java backend - spring,spring boot,jpa
+database - sql -MySQL,ms sql,oracle,sybase,db2
+no sql - mongodb,
+
+python full stack developer
+backend - python,flask,django,database
+
+java script full stack developer
+back end - node,express,mongodb
+
+Angular - google - frame work
+React - facebook  - library
+Vue.js 
+java script front end framework/library
+
+program
+library
+framework - libraries of such library
+
+MERN
+M - Mongo DB
+E - Express
+R - React 
+N - Node
+
+MEAN
+A - Angular
+Java script libraries/framework
+
+Chrome - V8 engine
+Node.js - java script server side run time environment
+
+Pre-assessment
+1. create assessment folder
+open this in visual studio code
+cd assessment
+code .
+create 1-preassement.html
+
+live server
+
+dom - document object model
+
+
+
+
