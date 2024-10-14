@@ -46,6 +46,14 @@ live server
 
 dom - document object model
 
+functions - 
+named functions 
+nameless functions
+arrow functions
+
+
+
+
 
 
 
