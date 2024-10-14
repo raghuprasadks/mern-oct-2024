@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Master</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Employee Master</h1>
+            <label>Code</label><br>
+            <input type="text" id="code"><br>
+            <label>Name</label><br>
+            <input type="text" id="name"><br>
+            <label>Department</label><br>
+            <input type="text" id="dept"><br>
+            <label>Designation</label><br>
+            <input type="text" id="desg"><br>
+            <label>Salary</label><br>
+            <input type="text" id="sal"><br>
+            <button onclick="addEmployee()">Add Employee</button>       
+       </div>
+    </div>
+
+    <script>
+        function Employee(code,name,dept,desg,sal){
+            this.code = code
+            this.name = name
+            this.dept = dept
+            this.desg = desg
+            this.sal = sal
+            this.info = function(){
+                return this.code + " " + this.name + " " + this.dept + " " + this.desg + " " + this.sal
+            }  
+        }
+
+        employees = []
+
+        function addEmployee(){
+            code = document.getElementById("code").value
+            name = document.getElementById("name").value
+            dept = document.getElementById("dept").value
+            desg = document.getElementById("desg").value
+            sal = document.getElementById("sal").value
+            employee = new Employee(code,name,dept,desg,sal)
+            employees.push(employee)
+            console.log("employee added ",employee.info())
+            console.log("employees ",employees)
+        }
+    </script>
+    
+</body>
+</html>
