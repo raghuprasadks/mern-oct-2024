@@ -62,6 +62,14 @@
         let totalMarks = marks.reduce((total,mark) => total+mark)
         console.log("total marks ",totalMarks)
 
+        console.log("arguments to map function")
+
+        marks.map((mark,index,marks) => {
+            console.log("mark ",mark)
+            console.log("index ",index)
+            console.log("marks ",marks)
+        })
+
 
     </script>
     
