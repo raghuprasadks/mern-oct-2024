@@ -28,7 +28,8 @@
             this.sal = sal
             this.info = function(){
                 return this.code + " " + this.name + " " + this.sal
-            }   
+            }  
+             
         }
 
         employee1 = new Employee(1,"ravi",494949)
@@ -45,6 +46,15 @@
         employees.forEach(employee => {
             console.log(employee.info())           
         });
+
+        Employee.prototype.increaseSal = function(inc){
+            this.sal = this.sal + inc
+        }
+
+        employee1.increaseSal(1000)
+        console.log("employee1 after increase sal ",employee1.info())
+        console.log(Employee)
+        employee2.increaseSal(2000)
 
 
     </script>
