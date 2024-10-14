@@ -19,7 +19,14 @@
             <input type="text" id="desg"><br>
             <label>Salary</label><br>
             <input type="text" id="sal"><br>
-            <button onclick="addEmployee()">Add Employee</button>       
+            <button onclick="addEmployee()">Add Employee</button>  
+            <button onclick="listEmployees()">List Employees</button>     
+       </div>
+       <div>
+            <h2>List Employees</h2>
+            <table id="tbldata">
+
+            </table>
        </div>
     </div>
 
@@ -48,6 +55,30 @@
             console.log("employee added ",employee.info())
             console.log("employees ",employees)
         }
+
+        function listEmployees(){
+            tbldata = document.getElementById("tbldata")
+            tbldata.innerHTML = "<tr><th>Code</th><th>Name</th><th>Department</th><th>Designation</th><th>Salary</th></tr>"
+            employees.forEach(employee => {
+                tr = document.createElement("tr")
+                td1 = document.createElement("td")
+                td1.innerHTML = employee.code
+                td2 = document.createElement("td")
+                td2.innerHTML = employee.name
+                td3 = document.createElement("td")
+                td3.innerHTML = employee.dept
+                td4 = document.createElement("td")
+                td4.innerHTML = employee.desg
+                td5 = document.createElement("td")
+                td5.innerHTML = employee.sal
+                tr.appendChild(td1)
+                tr.appendChild(td2)
+                tr.appendChild(td3)
+                tr.appendChild(td4)
+                tr.appendChild(td5)
+                tbldata.appendChild(tr)
+            });
+        }  
     </script>
     
 </body>
