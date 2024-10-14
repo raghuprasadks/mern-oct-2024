@@ -55,6 +55,28 @@ arrow functions
 
 
 
+create an arrow function namely calculateelecbill()
+
+arguments - units
+
+
+It should return the calculated electricity bill amount as per the
+details provided below
+
+units <100 - per unit charge is 1 rs
+units >=100 <200 - per unit charge is 2 rs
+units >=200 - per unit charge is 4 rs
+
+calculation is cumulative
+
+units consumed is 50 - 1 X 50 = 50
+units consumed is 150 - 1 X100 + 2 X 50 = 200
+units consumed is 300 - 1 X100 + 2 X 100 +4 X100
+
+
+
+
+
 
 
 
