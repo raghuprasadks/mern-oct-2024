@@ -1,2 +1,49 @@
 Agenda:
-1. 
+1. CRUD operation using html,java script
+2. React
+Java Script front end library
+Component based architecture
+SPA - Single Page Application
+index.html
+
+html/css
+JSX - Java Script and XML
+
+inteface with Back end - REST FULL webservice
+Routing
+
+Dataflow
+parent to child
+
+Components - functional based, class based 
+hooks
+
+pre-requisites
+download and install node.js
+java script server side run time environment
+
+npm - node package manager
+npx - node package exectutor
+visual studio code
+postman
+
+programs/react/nodedemo
+
+get inside react folder
+npx create-react-app reactbasics
+end quotient
+
+npm i -g npm
+
+happy hacking
+
+flow
+
+package.json
+
+npm i react
+
+index.html
+index.js
+app.js
+
