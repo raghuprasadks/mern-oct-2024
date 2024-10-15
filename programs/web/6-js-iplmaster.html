@@ -26,7 +26,8 @@
             
             
             <button onclick="addIPL()">Add Team</button>  
-            <button onclick="listIPL()">List Team</button>     
+            <button onclick="listIPL()">List Team</button> 
+            <button onclick="updateIPL()">Update Team</button>
        </div>
        <div>
             <h2>List Team</h2>
@@ -117,7 +118,7 @@
                     document.getElementById("lost").value = ipl.lost
                     document.getElementById("nrr").value = ipl.nrr
                     document.getElementById("points").value = ipl.points                    
-                }               
+                }             
                 
                 tr.appendChild(td1)
                 tr.appendChild(td2)
@@ -130,6 +131,29 @@
                 tr.appendChild(td9)
                 tbldata.appendChild(tr)
             });
+        }
+
+        function updateIPL(){
+            code = document.getElementById("code").value
+            name = document.getElementById("name").value
+            matches = document.getElementById("matches").value
+            win = document.getElementById("win").value
+            lost = document.getElementById("lost").value
+            nrr = document.getElementById("nrr").value
+            points = document.getElementById("points").value
+            ipldashboard = ipldashboard.map(i => {
+                if (i.code == code){
+                    i.name = name
+                    i.matches = matches
+                    i.win = win
+                    i.lost = lost
+                    i.nrr = nrr
+                    i.points = points
+                }
+                return i
+            })
+            listIPL()
+            reset()
         }
        
          
