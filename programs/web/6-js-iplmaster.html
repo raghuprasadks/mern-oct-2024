@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Master</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>IPL Master</h1>
+            <label>Code</label><br>
+            <input type="text" id="code"><br>
+            <label>Name</label><br>
+            <input type="text" id="name"><br>
+            <label>Matches</label><br>
+            <input type="text" id="matches"><br>
+            <label>Win</label><br>
+            <input type="text" id="win"><br>
+            <label>Lost</label><br>
+            <input type="text" id="lost"><br>
+            <label>Net Run Rate</label><br>
+            <input type="text" id="nrr"><br>
+            <label>Points</label><br>
+            <input type="text" id="points"><br>
+            
+            
+            <button onclick="addIPL()">Add Team</button>  
+            <button onclick="listIPL()">List Team</button>     
+       </div>
+       <div>
+            <h2>List Team</h2>
+            <table id="tbldata">
+
+            </table>
+       </div>
+    </div>
+
+    <script>
+        function IPL(code,name,matches,win,lost,nrr,points){
+            this.code = code
+            this.name = name
+            this.matches = matches
+            this.win = win
+            this.lost = lost
+            this.nrr = nrr
+            this.points = points
+            this.info = function(){
+                return this.code + " " + this.name + " " + this.matches + " " + this.win + " " + this.lost + " " + this.nrr + " " + this.points
+            }  
+        }
+
+        ipldashboard = []
+
+        function addIPL(){
+            code = document.getElementById("code").value
+            name = document.getElementById("name").value
+            matches = document.getElementById("matches").value
+            win = document.getElementById("win").value
+            lost = document.getElementById("lost").value
+            nrr = document.getElementById("nrr").value
+            points = document.getElementById("points").value
+            ipl = new IPL(code,name,matches,win,lost,nrr,points)
+            ipldashboard.push(ipl)
+            console.log("team added ",ipl.info())
+            console.log("teams ",ipldashboard)
+        }
+
+        
+        function listIPL(){
+            tbldata = document.getElementById("tbldata")
+            tbldata.innerHTML = "<tr><th>Code</th><th>Name</th><th>Matches</th><th>Win</th><th>Lost</th><th>Net Run Rate</th><th>Points</th><th>Delete</th><th>Edit</th></tr>"
+            ipldashboard.forEach(ipl => {
+                tr = document.createElement("tr")
+                td1 = document.createElement("td")
+                td1.innerHTML = ipl.code
+                td2 = document.createElement("td")
+                td2.innerHTML = ipl.name
+                td3 = document.createElement("td")
+                td3.innerHTML = ipl.matches
+                td4 = document.createElement("td")
+                td4.innerHTML = ipl.win
+                td5 = document.createElement("td")
+                td5.innerHTML = ipl.lost
+                td6 = document.createElement("td")
+                td6.innerHTML = ipl.nrr
+                td7 = document.createElement("td")
+                td7.innerHTML = ipl.points
+                td8 = document.createElement("td")
+                deleteButton = document.createElement("button")
+                deleteButton.innerHTML = "Delete"
+                td8.appendChild(deleteButton)
+                deleteButton.onclick = function(){
+                    ipldashboard = ipldashboard.filter(i => i.code != ipl.code)
+                    listIPL()
+                }
+                
+                
+                tr.appendChild(td1)
+                tr.appendChild(td2)
+                tr.appendChild(td3)
+                tr.appendChild(td4)
+                tr.appendChild(td5)
+                tr.appendChild(td6)
+                tr.appendChild(td7)
+                tr.appendChild(td8)
+                tbldata.appendChild(tr)
+            });
+        }
+       
+         
+    </script>
+    
+</body>
+</html>
