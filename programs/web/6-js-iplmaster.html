@@ -64,7 +64,18 @@
             ipldashboard.push(ipl)
             console.log("team added ",ipl.info())
             console.log("teams ",ipldashboard)
+            reset()
         }
+
+        function reset(){
+            document.getElementById("code").value = ""
+            document.getElementById("name").value = ""
+            document.getElementById("matches").value = ""
+            document.getElementById("win").value = ""
+            document.getElementById("lost").value = ""
+            document.getElementById("nrr").value = ""
+            document.getElementById("points").value = ""
+        }   
 
         
         function listIPL(){
@@ -94,7 +105,19 @@
                     ipldashboard = ipldashboard.filter(i => i.code != ipl.code)
                     listIPL()
                 }
-                
+                td9 = document.createElement("td")
+                editButton = document.createElement("button")
+                editButton.innerHTML = "Edit"
+                td9.appendChild(editButton)
+                editButton.onclick = function(){
+                    document.getElementById("code").value = ipl.code
+                    document.getElementById("name").value = ipl.name
+                    document.getElementById("matches").value = ipl.matches
+                    document.getElementById("win").value = ipl.win
+                    document.getElementById("lost").value = ipl.lost
+                    document.getElementById("nrr").value = ipl.nrr
+                    document.getElementById("points").value = ipl.points                    
+                }               
                 
                 tr.appendChild(td1)
                 tr.appendChild(td2)
@@ -104,6 +127,7 @@
                 tr.appendChild(td6)
                 tr.appendChild(td7)
                 tr.appendChild(td8)
+                tr.appendChild(td9)
                 tbldata.appendChild(tr)
             });
         }
