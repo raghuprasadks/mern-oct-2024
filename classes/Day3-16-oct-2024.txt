@@ -56,6 +56,32 @@ resolve - success - then ]
 
 
 
+Recap:
+Hooks
+useState
+useEffect
+fetch api - integration of restful web services
+css
+
+
+Properties
+
+parent to child - data flow
+
+<img src="mern.png" width=100 height =100></img>
+<user data={userdata}/>
+<user data={userdata}></user>
+property
+functionality
+addUser
+
+<user data={userdata} add={addUser}></user>
+
+const User =(property)=>{
+let userdata = property.data
+}
+
+
 
 
 
