@@ -1,0 +1,21 @@
+Agenda:
+
+1. Recap
+node.js
+visual studio code
+npx create-react-app <app name>
+npx create-react-app reactbasics
+cd react basics
+npm start
+
+App.js - root component - parent
+child components are added in App.js
+embed java script inside html jsx - {}
+array of objects , displayed data in table
+events - onclick,onchange,useState
+
+2. Assignment
+3. Hooks - useState,useEffect,useContext
+4. Properties - Dataflow - one way data flow from parent to child
+5. Integration with backend using ajax - fetch api,axios - API - Restful web services - fake api
+6. Routing

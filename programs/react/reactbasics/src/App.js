@@ -4,6 +4,8 @@ import Header from './Header';
 import Content from './Content';
 import Employees from './Employees';
 import SimpleInterest from './SimpleInterest';
+import Counter from './Counter';
+import SimpleMathCalculator from './components/SimpleMathCalculator';
 
 
 function App() {
@@ -14,9 +16,13 @@ function App() {
      <Header></Header>
      <Content></Content>
      <Employees></Employees>
+     <SimpleInterest></SimpleInterest>
+     <Counter></Counter>
        
       */}
-      <SimpleInterest></SimpleInterest>
+      <SimpleMathCalculator></SimpleMathCalculator>
+      
+      
     </div>
   );
 }
