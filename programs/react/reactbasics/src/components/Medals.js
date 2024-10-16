@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import '../css/Medals.css'
 
 const Medals = () => {
     const [code, setCode] = useState()  
@@ -24,10 +25,17 @@ const Medals = () => {
         setBronze('')
         setTotal('')
     } 
+
+    const deleteMedal = (code) => {
+      console.log("delete medal ",code) 
+        let newMedals = medals.filter((medal) => medal.code !== code)
+        setMedals(newMedals)
+    }
+
   return (
-    <div>
+    <div className="medals-container">
         <h1>Olympic Medals</h1>
-        <div>
+        <div className="medals-form">
             <label>Country Code</label>
             <input type="text" value={code} onChange={(e)=>setCode(e.target.value)} /><br/>
             <label>Country Name</label>
@@ -44,7 +52,7 @@ const Medals = () => {
             <button onClick={addMedal}>Add</button> 
         </div>
         <div>
-          <table>
+          <table className="medals-table">
             <tr>
               <th>Code</th>
               <th>Name</th>
@@ -52,6 +60,7 @@ const Medals = () => {
               <th>Silver</th>
               <th>Bronze</th>
               <th>Total</th>
+              <th>Delete</th>
             </tr>
             {medals.map((medal) => <tr key={medal.code}>
               <td>{medal.code}</td>
@@ -60,6 +69,7 @@ const Medals = () => {
               <td>{medal.silver}</td>
               <td>{medal.bronze}</td>
               <td>{medal.total}</td>
+              <td><button onClick={()=>deleteMedal(medal.code)}>Delete</button></td>
               </tr>
               )}
           </table>
