@@ -7,6 +7,7 @@ import SimpleInterest from './SimpleInterest';
 import Counter from './Counter';
 import SimpleMathCalculator from './components/SimpleMathCalculator';
 import FetchAPIDemo from './components/FetchAPIDemo';
+import Users from './components/Users';
 
 
 function App() {
@@ -20,10 +21,11 @@ function App() {
      <SimpleInterest></SimpleInterest>
      <Counter></Counter>
      <SimpleMathCalculator></SimpleMathCalculator>
+     <FetchAPIDemo></FetchAPIDemo>
        
       */}
-      <FetchAPIDemo></FetchAPIDemo>
       
+      <Users></Users>
       
       
     </div>
