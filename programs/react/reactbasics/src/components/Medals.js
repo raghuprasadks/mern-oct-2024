@@ -32,6 +32,25 @@ const Medals = () => {
         setMedals(newMedals)
     }
 
+    const editMedal = (medal) => {
+        console.log("edit medal ",medal)
+        setCode(medal.code)
+        setName(medal.name)
+        setGold(medal.gold)
+        setSilver(medal.silver)
+        setBronze(medal.bronze)
+        setTotal(medal.total)
+        
+    }
+
+    const updateMedal = () => {
+        console.log("update medal ",code)
+        let updatedMedal = {code,name,gold,silver,bronze,total}
+        let newMedals = medals.map((medal) => medal.code === code ? updatedMedal : medal)
+        setMedals(newMedals)
+        reset()
+    }   
+
   return (
     <div className="medals-container">
         <h1>Olympic Medals</h1>
@@ -50,6 +69,7 @@ const Medals = () => {
             <label>Total</label>
             <input type="text" value={total} onChange={(e)=>setTotal(e.target.value)} /><br/>
             <button onClick={addMedal}>Add</button> 
+            <button onClick={updateMedal}>Update</button>
         </div>
         <div>
           <table className="medals-table">
@@ -61,6 +81,7 @@ const Medals = () => {
               <th>Bronze</th>
               <th>Total</th>
               <th>Delete</th>
+              <th>Edit</th>
             </tr>
             {medals.map((medal) => <tr key={medal.code}>
               <td>{medal.code}</td>
@@ -70,6 +91,7 @@ const Medals = () => {
               <td>{medal.bronze}</td>
               <td>{medal.total}</td>
               <td><button onClick={()=>deleteMedal(medal.code)}>Delete</button></td>
+              <td><button onClick={()=>editMedal(medal)}>Edit</button></td>
               </tr>
               )}
           </table>
