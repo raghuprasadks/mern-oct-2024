@@ -6,6 +6,7 @@ import Employees from './Employees';
 import SimpleInterest from './SimpleInterest';
 import Counter from './Counter';
 import SimpleMathCalculator from './components/SimpleMathCalculator';
+import FetchAPIDemo from './components/FetchAPIDemo';
 
 
 function App() {
@@ -18,9 +19,11 @@ function App() {
      <Employees></Employees>
      <SimpleInterest></SimpleInterest>
      <Counter></Counter>
+     <SimpleMathCalculator></SimpleMathCalculator>
        
       */}
-      <SimpleMathCalculator></SimpleMathCalculator>
+      <FetchAPIDemo></FetchAPIDemo>
+      
       
       
     </div>

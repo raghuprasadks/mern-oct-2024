@@ -18,4 +18,55 @@ events - onclick,onchange,useState
 3. Hooks - useState,useEffect,useContext
 4. Properties - Dataflow - one way data flow from parent to child
 5. Integration with backend using ajax - fetch api,axios - API - Restful web services - fake api
+
+jsonplaceholder.typicode.com
+
+
+Asynchronous Java Script and XML 
+
+update part of the screen
+
+Synchronous - Request - Response - java,php,
+Asynchronous - non blocking
+
+Restaurant
+
+waiter
+
+
+Json placeholder typecode
+
+url - https://jsonplaceholder.typicode.com/todos
+web service end point
+
+http get -https://jsonplaceholder.typicode.com/todos
+gets list of todos
+
+http get - single todo - https://jsonplaceholder.typicode.com/todos/1
+
+http post - https://jsonplaceholder.typicode.com/todos
+
+postman
+
+api - api.amazon.co.in/user
+
+promise - resolve,reject - url
+
+resolve - success - then ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 6. Routing
