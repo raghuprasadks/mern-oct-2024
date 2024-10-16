@@ -9,6 +9,7 @@ import SimpleMathCalculator from './components/SimpleMathCalculator';
 import FetchAPIDemo from './components/FetchAPIDemo';
 import Users from './components/Users';
 import Student from './components/Student';
+import Medals from './components/Medals';
 
 
 function App() {
@@ -45,10 +46,12 @@ function App() {
      <SimpleMathCalculator></SimpleMathCalculator>
      <FetchAPIDemo></FetchAPIDemo>
      <Users></Users>
+     <Student data={studentdata}></Student>
        
       */}
+      <Medals></Medals>
 
-      <Student data={studentdata}></Student>
+      
       
       
       
