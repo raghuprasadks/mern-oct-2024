@@ -16,9 +16,9 @@ const Users = () => {
         getUsers()
     },[])  
   return (
-    <div>
+    <div className="users-container">
         <h1>Users</h1>
-        <table>
+        <table className="users-table">
             <thead>
                 <tr>
                     <th>Id</th>

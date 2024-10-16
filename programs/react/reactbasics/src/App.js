@@ -13,7 +13,7 @@ import Users from './components/Users';
 function App() {
   return (
     <div className="App">
-     <h1>Welcome to react</h1>
+     <h1 className='header'>Welcome to react</h1>
      {/**
      <Header></Header>
      <Content></Content>
