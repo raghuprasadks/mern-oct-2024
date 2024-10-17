@@ -22,3 +22,8 @@ const simpleinterest = (p,r,t) =>{
 }
 
 console.log("simple interest is ",si(1000,5,2))
+
+/**
+ * to run the program
+ * node 1-node-gettingstarted.js
+ */
