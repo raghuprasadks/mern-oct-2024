@@ -37,5 +37,25 @@ npm init
 npm i express
 https://www.npmjs.com/
 
+node
+express - api
+
+product
+post
+get
+delete
+update
+
+postman
+
+restful webservice
+http://localhost:3000/products
+
+end to end - react - express
+
+
+
+
+
 
 
