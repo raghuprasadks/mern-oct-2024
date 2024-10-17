@@ -72,6 +72,8 @@ post - http://localhost:3000/customers
 get - http://localhost:3000/customerbymobile/9845547471
 
 
+
+
 install nodemon globally
 
 open command prompt
@@ -84,7 +86,12 @@ to run the program using nodemon
 node <program name>
 nodemon <program name>
 
+full stack project
 
+1. create fullstack folder
+
+2. cd fullstack
+3. npx create-react-app frontend
 
 
 
