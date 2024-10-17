@@ -1,0 +1,37 @@
+Agenda:
+1. Server side programming
+2. Recap
+Day 1
+Java Script
+datatypes,operators,functions
+arrow function,arrays,
+higher order fuctions - map,filter,reduce
+foreach
+methods of arrays
+object,object constructors
+UI Programs
+event
+dom
+Day2 
+React
+Component - function based,class based
+virtual dom
+properties
+jsx
+Day 3
+AJAX
+fetch api - get method
+crud operation using react
+parent to child
+Day 4
+1. node.js
+2. visual code
+node.js
+java script server side run time environment
+browser
+chrome v8 engine
+v8 engine
+Asynchronous
+
+
+
