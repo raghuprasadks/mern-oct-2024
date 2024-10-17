@@ -26,6 +26,14 @@ app.post('/customers', (req, res) => {
     res.json(customer)
 })
 
+app.delete('/customers/:id', (req, res) => {
+    const id = req.params.id
+    const customer = customers.find(customer => customer.id === parseInt(id))
+    const index = customers.indexOf(customer)
+    customers.splice(index, 1)
+    res.json(customer)
+})
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
 })

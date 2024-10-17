@@ -23,8 +23,11 @@ const Customers = () => {
         .then((data)=>{
             //setCustomers([...customers,data])
             console.log(data)
+            console.log("before reset")
+            resetCustomer()
             alert("Customer added successfully")
             getCustomers()
+            
         })
     }
 
@@ -40,21 +43,52 @@ const Customers = () => {
         getCustomers()
     },[])   
 
+    const deleteCustomer=(id)=>{
+        fetch(url+"/"+id,{
+            method:'DELETE'
+        }).then((res)=>res.json())
+        .then((data)=>{
+            console.log(data)
+            alert("Customer deleted successfully")
+            getCustomers()
+        })
+    }
+
+    const resetCustomer=()=>{
+        console.log('reset customer')
+       // setId("")
+        setName("")
+        setEmail("")
+        setMobile("")
+        setLocation("")
+        setZipcode("")
+    }
+
+    const editCustomer=(customer)=>{
+        console.log("edit ",customer)
+        setId(customer.id)
+        setName(customer.name)
+        setEmail(customer.email)
+        setMobile(customer.mobile)
+        setLocation(customer.location)
+        setZipcode(customer.zipcode)
+    }
+
 
   return (
     <div>
     <div>
         <h1>Customer Master</h1>
         <label>Name</label>
-        <input type="text" onChange={(e)=>setName(e.target.value)}/><br/>
+        <input type="text" value ={name} onChange={(e)=>setName(e.target.value)}/><br/>
         <label>Email</label>
-        <input type="text" onChange={(e)=>setEmail(e.target.value)}/><br/>
+        <input type="text" value ={email} onChange={(e)=>setEmail(e.target.value)}/><br/>
         <label>Mobile</label>
-        <input type="text" onChange={(e)=>setMobile(e.target.value)}/><br/>
+        <input type="text" value ={mobile}  onChange={(e)=>setMobile(e.target.value)}/><br/>
         <label>Location</label>
-        <input type="text" onChange={(e)=>setLocation(e.target.value)}/><br/>
+        <input type="text" value ={location} onChange={(e)=>setLocation(e.target.value)}/><br/>
         <label>Zipcode</label>
-        <input type="text" onChange={(e)=>setZipcode(e.target.value)}/><br/>
+        <input type="text" value ={zipcode} onChange={(e)=>setZipcode(e.target.value)}/><br/>
         <button onClick={addCustomer}>Save</button>
         
     </div>
@@ -68,6 +102,8 @@ const Customers = () => {
                     <th>Mobile</th>
                     <th>Location</th>
                     <th>Zipcode</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
                 </tr>
             </thead>
             <tbody>
@@ -81,6 +117,8 @@ const Customers = () => {
                                 <td>{customer.mobile}</td>
                                 <td>{customer.location}</td>
                                 <td>{customer.zipcode}</td>
+                                <td><button onClick={()=>deleteCustomer(customer.id)}>Delete</button></td>
+                                <td><button onClick={()=>editCustomer(customer)}>Edit</button></td>
                             </tr>
                         )
                     })
