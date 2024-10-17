@@ -72,6 +72,17 @@ post - http://localhost:3000/customers
 get - http://localhost:3000/customerbymobile/9845547471
 
 
+install nodemon globally
+
+open command prompt
+
+npm i -g nodemon
+
+
+to run the program using nodemon
+
+node <program name>
+nodemon <program name>
 
 
 
