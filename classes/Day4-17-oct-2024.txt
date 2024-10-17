@@ -49,9 +49,28 @@ update
 postman
 
 restful webservice
-http://localhost:3000/products
+api - get- http://localhost:3000/products
+api - get - http://localhost:3000/products/1
 
 end to end - react - express
+
+
+Assignment api development using express.js
+1. create a customers api
+2. Use following properties for a customer
+id,name,mobile,email,location,zipcode
+3. Write following api's
+a. list all customers
+http://localhost:3000/customers
+2. display customers living in a specific area
+http://localhost:3000/customersbyarea/jayanagar
+3. display customers having same zipcode
+http://localhost:3000/customersbyzipcode/560077
+4. Add a new customer
+post - http://localhost:3000/customers
+5. Search a customer by mobile number
+get - http://localhost:3000/customerbymobile/9845547471
+
 
 
 
