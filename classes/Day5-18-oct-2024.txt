@@ -1,0 +1,111 @@
+Agenda:
+
+1. MongoDB
+Basic mongodb commands
+2. Interface mongodb with Express
+3. MERN - building app
+
+Recap:
+
+1. Java Script
+2. AJAX ,React
+3. React - building simple apps
+4. Node.js , Express.js
+
+Database
+MySQL
+
+RDBMS - SQL based
+NoSQL - not only SQL
+Relational DBMS
+ACID
+break down into different tables
+Primary key,foeign key
+customer
+name,email,mobile,location
+id - customer id - primary key
+
+product
+id,name,desc,supplier,price
+order
+orderid,customerid,totalamount,do,status
+
+create table customer
+id int pk ai
+name varchar
+
+insert into customer values
+SQL - Structured query language
+oracle,ms-sql,my-sql,postgres,db2,sybase
+
+no SQL - not only sql
+document database - mongodb
+json
+customer={
+"id":1,
+"name":"Ravi",
+
+}
+
+Download
+mongodb community server
+mongodbcompass - client
+
+customers=[
+{
+"id":1,
+"name":"Ravi",
+
+
+},
+{
+"id":1,
+"name":"Ravi",
+"aadhar":3933993
+"address":[{
+},
+{}
+]
+
+
+}
+]
+
+multiple machines
+vs single machine
+vertical scaling
+horizontal scaling
+machine1,machine2...
+
+Steps
+1. create a database
+2. go to mongoshell with in compass
+3. MongoDB commands
+a. To display databases
+show dbs
+b. Create new database
+use mern18oct2024db
+c. to display collections
+show collections
+d. to create a collection
+db.createCollection("employee")
+e. insert document to a collection
+db.employee.insertOne({"name":"suresh","code":1,"dept":"IT","desg":"programmer","salary":484884})
+
+db.employee.insertOne({"name":"gagana","code":2,"dept":"accounts","desg":"executive","salary":384884})
+
+db.employee.insertMany([{"name":"philips","code":3,"dept":"admin","desg":"manager","salary":584884},{"name":"abdul","code":3,"dept":"hr","desg":"executive","salary":284884}])
+e. to display all documents with in a collection
+db.employee.find()
+
+f. display employees of hr department
+db.employee.find({"dept":"hr"})
+
+g. delete a document
+db.employee.deleteOne({"_id":ObjectId("6711eb12417f446302ee28bb")})
+
+h.Update a document
+db.employee.updateOne({'name':'philips'},{$set:{'desg':'senior manager'}})
+
+
+
