@@ -109,3 +109,23 @@ db.employee.updateOne({'name':'philips'},{$set:{'desg':'senior manager'}})
 
 
 https://blog.e-zest.com/basic-commands-for-mongodb
+
+
+Express
+MERN
+end to end
+
+Step 1 - cd nodedemo folder
+Step 2 - install mongodb module
+npm i mongodb
+verify this in package.json
+Step 3 - integrate mongodb with express api
+
+promise
+
+fetch(url)
+.then()
+.then()
+.catch()
+
+async await
