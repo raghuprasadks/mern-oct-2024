@@ -1,0 +1,159 @@
+/* src/App.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+/* Layout styles */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header, .footer {
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Navigation styles */
+nav {
+  background-color: rgba(51, 51, 51, 0.8);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* Home component styles */
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  color: #333;
+}
+
+/* Products component styles */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: calc(33.333% - 2rem);
+  box-sizing: border-box;
+}
+
+/* SignUp component styles */
+.signup {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+/* Login component styles */
+.login {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+/* ContactUs component styles */
+.contact-us {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us input, .contact-us textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+/* NoPage component styles */
+.no-page {
+  text-align: center;
+  padding: 2rem;
+}
+
+.no-page h1 {
+  color: #ff0000;
+}

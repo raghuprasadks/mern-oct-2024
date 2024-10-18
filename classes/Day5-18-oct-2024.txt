@@ -129,3 +129,31 @@ fetch(url)
 .catch()
 
 async await
+
+End to end - MERN
+
+Sign Up
+
+Routes
+
+
+1. create folder ecomapp under programs folder
+2. create react project frontend inside ecomapp folder
+npx create-react-app frontend
+cd frontend
+npm start
+
+create components folder inside src
+
+npm i react-router-dom
+
+3. create api folder inside ecomap
+cd api
+npm init
+install express,cors,mongodb
+app.js
+
+
+
+
+
