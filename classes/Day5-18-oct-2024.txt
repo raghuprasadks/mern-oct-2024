@@ -108,4 +108,4 @@ h.Update a document
 db.employee.updateOne({'name':'philips'},{$set:{'desg':'senior manager'}})
 
 
-
+https://blog.e-zest.com/basic-commands-for-mongodb
