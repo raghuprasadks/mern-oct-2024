@@ -1,0 +1,32 @@
+Agenda:
+1. End to end project
+2. Routing in express
+3. Encrypting password
+4. Sign Up,Login - useNavitage hooks
+5. Recap - day 1 to day 6
+6. Feedback and mcq test
+7. Coding test
+
+Steps
+1. Create api folder inside ecomapp
+2. cd api
+3. code .
+4. npm init
+5. create app.js file
+6. install express cors mongodb
+npm i express cors mongodb
+7. create routes folder inside api folder
+6. Create Product.js and User.js inside routes
+8. create db folder inside api
+9. create Connectdb.js insider db folder
+10. to run nodemon app.js
+11. open postman and test user sign using
+following api
+http://localhost:5000/users
+
+
+
+
+
+
+
