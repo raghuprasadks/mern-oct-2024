@@ -18,4 +18,12 @@ userRouter.post('/', async(req, res) => {
     }
 });
 
+userRouter.post('/login', async(req, res) => {
+    try {
+        const { email, password } = req.body;
+        console.log("email ",email)
+    } catch (error) {
+        res.status(500).send({ error: 'An error occurred while creating the product' });
+    }})
+
 module.exports = userRouter;

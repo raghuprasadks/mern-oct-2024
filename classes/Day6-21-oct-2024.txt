@@ -24,6 +24,170 @@ npm i express cors mongodb
 following api
 http://localhost:5000/users
 
+Programming assignment is login
+
+Coding Assignment:
+
+1. Develop front end and backend for login
+
+
+1. Day 1 java script
+
+official name - ECMA script
+
+var,let,const
+
+function,arrow function
+
+array - push,pop,shift,unshift
+
+
+higher order function - map,filter,reduce
+
+promise - resolve,reject
+async await
+object constructors
+
+ajax - fetch api
+
+axios  - npm i axios
+
+react -
+npx create-react-app <appname>
+
+functional based class based/class based
+
+hooks - useState,useEffect,useNavigate
+
+continuous rendering
+useEffect(
+()=>{}
+)
+
+only one time 
+
+useEffect(
+()=>{},[]
+)
+
+useEffect(
+()=>{},[todo]
+)
+
+
+routing
+property - parent to child
+
+
+()=>todos(prop)
+
+back end
+
+node.js - server side js runtime environment
+
+npm,npx
+
+express.js for api
+
+crud
+mongodb
+
+routing
+
+end to end 
+
+
+cors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
